@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.main{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    z-index: 99;
+}
+.logo img{
+    width: 100px;
+}
+li{
+    display: inline-block;
+    margin-left:15px ;
+}
+li a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: black;
+}
+.light-at-img{
+    overflow: hidden;
+    position: relative;
+}
+.img-2{
+    display: none;
+}
+.light-at-img::before{
+    content: "light: at thr heart of audi’s DNA";
+    position:absolute;
+    top: 40%;
+    left: 15%;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+
+.light-at-img img{
+    width: 100%;
+    transition: 0.5s;
+}
+.main:hover .img-1{
+    transform: scale(1.1);
+}
+.main:hover .img-2{
+    transform: scale(1.1);
+}
+.light-at-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+.light-at-text p{
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: black;
+}
+.light-at-text button{
+    margin-top: 20px;
+    height: 70px;
+    width: 250px;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    border: solid 1px;
+}
+.light-at-text button:hover{
+    color: rgb(56, 55, 55);
+}
+.current-topics{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.current-topics-titlle{
+    text-align: center;
+    font-size: 26px;
+    margin: 160px 0 100px;
+}
+.current-topics-cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.current-topics-img{
+    overflow: hidden;
+}
+.current-topics-card{
+    width: 30%;
+    margin: 10px 0 10px 10px;
+}
+.current-topics-cards img{
+    width: 100%;
+    transition: 0.5s;
+}
+.current-topics-cards img:hover{
+    transform: scale(1.2);
+}
+.current-topics-cards h6{
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.full-electric{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.full-electric-text{
+    width: 40%;
+}
+.full-electric-text h6{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.full-electric-text p{
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.full-electric-text button{
+    width: 250px;
+    height: 60px;
+    color: black;
+    border: solid 1px;
+    font-size: 16px;
+}
+.full-electric-img{
+    width: 40%;
+}
+.full-electric-img img{
+    width: 120%;
+}
+.audi-career{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.audi-career-img{
+    width: 40%;
+}
+.audi-career-img img{
+    width: 120%;
+}
+.audi-career-text{
+    width: 40%;
+    padding: auto;
+}
+.audi-career-text h6{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.audi-career-text p{
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.audi-career-text button{
+    width: 250px;
+    height: 60px;
+    color: black;
+    border: solid 1px;
+    font-size: 16px;
+}
+.press-releases{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.press-releases h5{
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 30px;
+}
+.press-releases-cards{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.press-releases-cards img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.press-releases-cards p{
+    font-size: 30px;
+    font-weight: 350;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.press-releases-card{
+    width: 32%;
+    margin-right: 15px;
+}
+.press-releases-card-img{
+    overflow: hidden;
+}
+.press-releases-card-img img{
+    transition: 0.5s;
+}
+.press-releases-card:hover img{
+    transform: scale(1.3);
+} 
+
+.press-releases button{
+    width: 250px;
+    height: 60px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: beige;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: solid black;
+}
+.at-audi{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: 20px;
+    align-items: center;
+}
+.at-audi-img{
+    width: 40%;
+}
+.at-audi-img img{
+    width: 120%;
+}
+.at-audi-text{
+    width: 40%;
+}
+.at-audi-text h6{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.at-audi-text p{
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.at-audi-text .info{
+    font-size: 12px;
+    text-transform: capitalize;
+    line-height: 15px;
+}
+.at-audi-text button{
+    width: 250px;
+    height: 60px;
+    color: black;
+    border: solid 1px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+@media screen and (max-width:768px){
+    .current-topics-cards{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .current-topics-card{
+        width: 100%;
+    }
+    .full-electric{
+        flex-direction: column;
+    }
+    .full-electric-img,.full-electric-text{
+        padding: 0 20px;
+        width: 100%;
+    }
+    .audi-career{
+        flex-direction: column;
+    }
+    .audi-career-img,.audi-career-text{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .press-releases-cards{
+        flex-direction: column;
+    }
+    .press-releases-card{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .at-audi{
+        flex-direction: column;
+    }
+    .at-audi-text,.at-audi-img{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:600px){
+    .img-1{
+        display: none;
+    }
+    .img-2{
+        display: inline;
+    }
+    header{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    li a{
+        font-size: 16px;
+    }
+    
+}
